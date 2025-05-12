@@ -1,0 +1,116 @@
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: youngserif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+body{
+    background-color: hsl(30, 18%, 87%);
+}
+
+.container {
+    max-width: 800px;
+    background-color: white;
+}
+
+h1{
+    font-family: youngserif;
+    letter-spacing: 0.1rem;
+}
+
+h2{
+    font-family: youngserif;
+    color: hsl(14, 45%, 36%);
+    letter-spacing: 0.1rem;
+}
+
+ol, ul {
+    padding-left: 1.3rem;
+}
+
+p, li{
+    font-size: 16px;
+    line-height: 1.8;
+    color: hsl(30, 10%, 34%);
+}
+li{
+    margin-top: 0.5rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.border-top{
+    border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+.container section{
+    padding: 1.5rem;
+}
+
+.banner h1{
+    margin-bottom: 1rem;
+}
+.banner article{
+    background-color: hsl(330, 100%, 98%);
+    color: hsl(332, 51%, 32%);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+}
+.banner article h3{
+    margin-bottom: 0.5rem;
+}
+
+.ingredients h2, 
+.instructions h2{
+    margin-bottom: 1rem;
+}
+
+.nutrition p{
+    margin-top: 1rem;
+}
+
+.nutrition ul :not(:first-child){
+    border-top: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition  ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nutrition li {
+    text-align: left;
+}
+
+.nutrition span{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 768px) {
+    .container {
+        margin: 5rem auto;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    img{
+        border-radius: 1rem;
+    }
+}
